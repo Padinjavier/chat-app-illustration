@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --font-family: 'Rubik', sans-serif;
+    /* gradiente */
+    --Light-Magenta: #e942ff;
+    --Light-Violet: #8838ff;
+    /* text */
+    --Pale-Violet: #d89eff;
+    --Moderate-Violet: #9241c8;
+    --Desaturated-Dark-Violet: #6e5d7e;
+    --Grayish-Blue: #c6cacd;
+    --Very-Dark-Desaturated-Violet: #3e2753;
+    --Dark-Grayish-Violet: #a39daa;
+    /* secondary */
+    --White: #ffffff;
+    --Light-Grayish-Violet: #f5f3f7;
+    --Very-Dark-Desaturated-Violet: #3e2753;
+    --Very-Light-Magenta: #e570ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    min-height: 100%;
+    position: relative;
+    background-color: #f5f3f7;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.mobile{
+    padding: 45px 0;
+}
+.color{
+    width: 570px;
+    height: 515px;
+    position: absolute;
+    z-index: -1;
+}
+.color1 {
+    border-bottom-right-radius: 100% 100%;
+    border-bottom-left-radius: 100% 100%;
+    top: 0;
+    left: -382px;
+    background-image: linear-gradient(to bottom, #bf40ff, #8545d9);
+}
+.color2 {
+    height: 500px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    bottom: 0;
+    right: -382px;
+    background-color: #d89eff;
+    opacity: 0.05;
+}
+.mobil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 247px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 32px 0 var(--Desaturated-Dark-Violet);
+}
+.user{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to left,#e942ff,#8838ff);
+    padding: 30px 20px 10px 20px;
+    border-radius: 20px 20px 5px 5px;
+    align-items: center;
+    color: white;
+}
+.user i{
+    font-size: 12px;
+}
+.user-name{
+    display: flex;
+    align-items: center;
+}
+.user-name i,
+.user-name img{
+    margin-right: 5px;
+}
+.user-name img{
+    border: 1px solid var(--White);
+    border-radius: 100px;
+    width: 12%;
+}
+.user h1{
+    font-size: 12px;
+}
+.user p{
+    font-size: 10px;
+    color: var(--Dark-Grayish-Violet);
+}
+.notch {
+    width: 128px;
+    height: 18px;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    z-index: 1;
+    background-color:var(--White);
+}
+.chat{
+    background-color: var(--Light-Grayish-Violet);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 20px 20px;
+}
+.my-message {
+    width: auto;
+    max-width: 62%;
+}
+.my-message p{
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px;
+    font-size: 8px;
+    margin-bottom: 5px;
+    color: var(--Moderate-Violet);
+    background-color: var(--Grayish-Blue);
+}
+.Your-message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px 0px;
+}
+.images{
+    display: flex;
+    justify-content: flex-end;
+}
+.images img{
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px 0px 10px 5px;
+}
+.Your-message p{
+    width: auto;
+    max-width: 62%;
+    margin-bottom:10px;
+    border-radius: 10px 10px 4.5px 10px;
+    padding: 5px;
+    background-color: white;
+    font-size: 8px;
+}
+.cost {
+    background: linear-gradient(to left,#8838ff,#e942ff);
+    width: 75%;
+    font-size: 8px;
+    color: var(--White);
+    margin-bottom: 5px;
+    padding: 5px 15px 5px 5px;
+    border-radius: 10px 10px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cost i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.cost p{
+    background-color: transparent;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+}
+/*  */
+form{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.email{
+    width: 100%;
+    border-radius: 50px;
+    padding: 12px 20px;
+    border: none;
+    position: relative;
+    font-size: 8px;
+}
+::placeholder{
+    color: var(--Dark-Grayish-Violet);
+}
+.buttonn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.btn{
+    height: 100%;
+    padding: 0px 5px;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.info{
+    margin-top: 50px;
+    text-align: center;
+}
+.info h2{
+    font-weight: 500;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.info p{
+    color: var(--Dark-Grayish-Violet);
+}
